@@ -1,4 +1,3 @@
-# CapstoneProject377
 # BeautyBot: AI for Beauty Product Launch Optimization
 ## Project Overview
 ### Problem Area
