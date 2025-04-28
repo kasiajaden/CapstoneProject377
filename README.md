@@ -1,7 +1,6 @@
 # CapstoneProject377
 # BeautyBot
-## Project Overview
-**BeautyBot: AI for Beauty Product Launch Optimization
+**BeautyBot**: AI for Beauty Product Launch Optimization
 Project Overview
 Problem Area
 This project addresses the challenge of helping beauty brands optimize new product launches and pricing strategies by using data-driven insights. Key issues include:
@@ -85,4 +84,4 @@ Update datasets to include more recent beauty products and reviews
 Incorporate social media sentiment analysis (e.g., TikTok, Instagram trends)
 Explore computer vision models analyzing product packaging or before/after images
 Integrate larger customer profile datasets to refine personas
-Expand to recommend launch strategies based on emerging beauty trends**
+Expand to recommend launch strategies based on emerging beauty trends
