@@ -14,10 +14,13 @@ Kasia Windett | Applied Statistics & Probability | Spring / 2025
 
 ## Project Overview
 ### Problem Area
+
 **Problem Statement**
 More times than often, brands in the beauty industry have a hard time predicting whether or not their consumers will like a product they’re selling. Brands, retailers, product development and marketing teams often have trouble with predicting product success and customer satisfaction, identifying optimal pricing strategies, and understanding customer preferences.
+
 **Proposed Solution**
 A solution that is ideal for this type of problem is building a predictive model using data science. To be more specific, there will be multiple models built and developed to find the best one, such as linear regression. This ideal model will predict customer ratings, that way businesses can analyze their goals and customers more effectively. 
+
 **Impact**
 This solution will add value to businesses by having product improvement, inventory optimization, higher customer loyalty, and reduced return rates. Beauty companies will gain insight from the predictive feedback to tailor their formulas, packaging, or marketing strategy. Beauty retailers, such as Sephora, can predict which products will be rated high to stock more inventory or reduce their overstock on low-demand products. Customers will have fewer returns to make because the products will meet their expectations, if not, surpass them. 
 
@@ -77,12 +80,13 @@ architectures.
 | notebook/sephorawebsite.ipynb#3-preprocesssing-the-data            | Cleaning and saving processed data                            | 
 | notebook/sephorawebsite.ipynb#4-exploratory-data-analysis          | Visual and statistical exploration of cleaned data            | 
 | notebook/sephorawebsite.ipynb#5-baseline-models                    | Fit and evaluate initial benchmark models                     | 
-| notebook/sephorawebsite.ipynb#6-advanced-modeling-and-optimization | Advanced modeling, optimization, and final evaluation         | 
-| notebook/sephorawebsite.ipynb#7-conclusion                         | Conclusive thoughts and decisions                             | 
+| notebook/sephorawebsite.ipynb#6-advanced-modeling-and-optimization | Advanced modeling and optimization                            | 
+| notebook/sephorawebsite.ipynb#7-model-comparisons-and-evalutions   | Model comparisons and final evaluation                        | 
+| notebook/sephorawebsite.ipynb#8-conclusion                         | Conclusive thoughts and decisions                             | 
 
 ## Results & Deliverables
 - **Final Model** – notebook/sephorawebsite.ipynb#6-advanced-modeling-and-optimization
-- **Key Figures** – located in notebook/sephorawebsite.ipynb#6-advanced-modeling-and-optimization
+- **Key Figures** – located in notebook/notebook/sephorawebsite.ipynb#7-model-comparisons-and-evalutions
 - **Metrics Summary** – documented in notebooks and slide deck
 
 
