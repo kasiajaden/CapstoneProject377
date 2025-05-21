@@ -41,17 +41,12 @@ This solution will add value to businesses by having product improvement, invent
 ## Project Structure
 CapstoneProject/
 ├── README.md
-├── .gitignore
 │
-├── data/
-│ ├── raw/ # Immutable source data
-│ └── processed/ # Cleaned, feature‑engineered data
 │
-├── notebook/ sephorawebsite.ipynb
+├── sephorawebsite.ipynb # notebook
 │
-├── slides/Captone_Final_Presentation.pdf
-│
-└── outputs/figures
+└── Captone_Final_Presentation.pdf
+
 
 ## Project Flow
 Raw Data Ingestion → Data Cleaning
