@@ -1,71 +1,100 @@
-# BeautyBot: AI for Beauty Product Launch Optimization
+# BeautyBot: Product Ratings Prediction
+Kasia Windett | Applied Statistics & Probability | Spring / 2025
+
+## Table of Contents
+1. Project Overview
+2. Data Description 
+3. Project Structure
+4. Project Flow
+5. Notebook Sections
+6. Results & Deliverables
+7. Slide Deck
+8. License
+
+
 ## Project Overview
 ### Problem Area
-This project addresses the challenge of helping beauty brands optimize new product launches and pricing strategies by using data-driven insights. Key issues include:
-- Predicting product success and customer satisfaction based on early data
-- Identifying optimal pricing strategies for new products
-- Understanding diverse customer preferences to minimize product mismatches
-- Reducing the risks and costs associated with product trial-and-error for consumers
-### Affected Stakeholders
-- Beauty brands and retailers
-- Product development and marketing teams
-- Pricing strategists
-- Consumers (secondary impact)
-### Proposed Data Science Solution
-We aim to develop and evaluate machine learning models to drive insights for beauty brands:
-1. Numerical Prediction (e.g., predicting optimal price ranges)
-2. Customer Grouping (e.g., clustering customers into beauty personas)
-3. Product Recommendation Models (e.g., suggesting products based on user preferences)
-4. Categorical Prediction (e.g., predicting customer satisfaction)
-#### These models will:
-- Predict fair price ranges for new products
-- Help define customer personas based on purchase habits
-- Optimize marketing and product launch strategies
-- Minimize product mismatch risks for target customer groups
-### Impact
-The potential impact of BeautyBot includes:
-- Increased revenue through better-targeted launches (estimates suggest >$100,000 revenue uplift per product)
-- Higher customer loyalty and reduced return rates
-- Significant time and money savings for both companies and customers
-- Enhanced competitive advantage through data-driven product strategy
-### Dataset Description
-Our initial analysis utilizes a dataset sourced from Sephora’s website (over 9,000+ products, including):
-- Product ratings
-- Customer reviews
-- Price points
-- Ingredient lists
-- Data Dictionary
+**Problem Statement**
+More times than often, brands in the beauty industry have a hard time predicting whether or not their consumers will like a product they’re selling. Brands, retailers, product development and marketing teams often have trouble with predicting product success and customer satisfaction, identifying optimal pricing strategies, and understanding customer preferences.
+**Proposed Solution**
+A solution that is ideal for this type of problem is building a predictive model using data science. To be more specific, there will be multiple models built and developed to find the best one, such as linear regression. This ideal model will predict customer ratings, that way businesses can analyze their goals and customers more effectively. 
+**Impact**
+This solution will add value to businesses by having product improvement, inventory optimization, higher customer loyalty, and reduced return rates. Beauty companies will gain insight from the predictive feedback to tailor their formulas, packaging, or marketing strategy. Beauty retailers, such as Sephora, can predict which products will be rated high to stock more inventory or reduce their overstock on low-demand products. Customers will have fewer returns to make because the products will meet their expectations, if not, surpass them. 
 
-| Variable    | Description                        | Type    |
-|-------------|------------------------------------|---------|
-| product_id  | Unique identifier for each product | String
-| product_name| Name of the product                | String
-| price       | Current price in USD               | Float
-| rating      | Average customer rating (out of 5) | Float
-| review_count| Number of customer reviews         | Integer
-| ingredients | List of ingredients used in the product| String
-| category    | Beauty category (e.g. skincare, makeup)| String
 
-## Methodology
-1. Data cleaning and preprocessing (handling missing values, text parsing for ingredients)
-2. Feature engineering (e.g., creating categories based on price ranges, ingredient features)
-3. Implementation of ML models (Numerical prediction, clustering, recommendations)
-4. Evaluation using metrics like Mean Absolute Error (MAE), silhouette score for clustering, and classification accuracy
-5. Visualization of results (e.g., product launch risk matrix, customer persona clusters)
-## Results
-The project will generate:
-- Price optimization models for new products
-- Customer segmentation charts
-- Recommendation engines to guide marketing and launch strategies
-- Predictive insights into product success based on early performance indicators
-## Limitations
-- Dataset age: Sephora data is ~5 years old; updated datasets may be needed for live application.
-- Bias: Skew toward brands and demographics popular on Sephora; generalization to other retailers may require broader datasets.
-- Ingredient Complexity: Parsing and modeling ingredient effects may require further natural language processing (NLP).
-## Future Work
-- Update datasets to include more recent beauty products and reviews
-- Incorporate social media sentiment analysis (e.g., TikTok, Instagram trends)
-- Explore computer vision models analyzing product packaging or before/after images
-- Integrate larger customer profile datasets to refine personas
-- Expand to recommend launch strategies based on emerging beauty trends
+## Dataset Description
+- Source: Kaggle https://www.kaggle.com/datasets/raghadalharbi/all-products-available-on-sephora-website/data
+- Raw Files: Located under 
+- Processed files:
+
+
+| File Name                | Description                                                   | 
+|--------------------------|---------------------------------------------------------------|
+| data/raw/                | Original data set                                             | 
+| data/processed/train.csv | Cleaned & featured-engineered training set                    | 
+| data/processed/test.csv  | Cleaned & featured-fengineered test set                       | 
+
+
+## Project Structure
+CapstoneProject/
+├── README.md
+├── .gitignore
+│
+├── data/
+│ ├── raw/ # Immutable source data
+│ └── processed/ # Cleaned, feature‑engineered data
+│
+├── notebook/ sephorawebsite.ipynb
+│
+├── slides/Captone_Final_Presentation.pdf
+│
+└── outputs/figures
+
+## Project Flow
+Raw Data Ingestion → Data Cleaning
+Data Cleaning → Feature Engineering
+Feature Engineering → Exploratory Data Analysis
+EDA → Baseline Modeling
+Baseline Modeling → Advanced Modeling & Optimization
+Advanced Modeling → Model Evaluation & Interpretation
+Evaluation → Deployment & Reporting
+
+1. **Raw Data Ingestion** – load source files and validate schema.
+2. **Data Cleaning** – handle missing values, remove duplicates, standardize formats.
+3. **Feature Engineering** – create new variables, encode categoricals, scale numerics.
+4. **Exploratory Data Analysis** – generate summary statistics and key visualizations.
+5. **Baseline Modeling** – simple models to set performance benchmarks.
+6. **Advanced Modeling & Optimization** – hyperparameter tuning, ensembles, or complex
+architectures.
+7. **Model Evaluation & Interpretation** – compare metrics.
+8. **Deployment & Reporting** –  final model 
+
+## Notebook Sections 
+| Path                                                               | Purpose                                                       | 
+|--------------------------------------------------------------------|---------------------------------------------------------------|
+| notebook/sephorawebsite.ipynb#1-importing-libraries-and-dataset    | Data and library ingestion                                    | 
+| notebook/sephorawebsite.ipynb#2-data-overview                      | Scoping the dataset                                           | 
+| notebook/sephorawebsite.ipynb#3-preprocesssing-the-data            | Cleaning and saving processed data                            | 
+| notebook/sephorawebsite.ipynb#4-exploratory-data-analysis          | Visual and statistical exploration of cleaned data            | 
+| notebook/sephorawebsite.ipynb#5-baseline-models                    | Fit and evaluate initial benchmark models                     | 
+| notebook/sephorawebsite.ipynb#6-advanced-modeling-and-optimization | Advanced modeling, optimization, and final evaluation         | 
+| notebook/sephorawebsite.ipynb#7-conclusion                         | Conclusive thoughts and decisions                             | 
+
+## Results & Deliverables
+- **Final Model** – notebook/sephorawebsite.ipynb#6-advanced-modeling-and-optimization
+- **Key Figures** – located in notebook/sephorawebsite.ipynb#6-advanced-modeling-and-optimization
+- **Metrics Summary** – documented in notebooks and slide deck
+
+
+## Slide Deck
+Location: /slides/Capstone_Final_Presentation.pdf
+
+
+## License
+This project is licensed under the **CCNY License**.
+
+
+
+
+
 
