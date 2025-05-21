@@ -16,10 +16,10 @@ Kasia Windett | Applied Statistics & Probability | Spring / 2025
 ### Problem Area
 
 **Problem Statement**
-More times than often, brands in the beauty industry have a hard time predicting whether or not their consumers will like a product they’re selling. Brands, retailers, product development and marketing teams often have trouble with predicting product success and customer satisfaction, identifying optimal pricing strategies, and understanding customer preferences.
+More times than often, brands in the beauty industry have a hard time predicting whether or not their consumers will like a product they’re selling. Brands, retailers, product development, and marketing teams often have trouble with predicting product success and customer satisfaction, identifying optimal pricing strategies, and understanding customer preferences.
 
 **Proposed Solution**
-A solution that is ideal for this type of problem is building a predictive model using data science. To be more specific, there will be multiple models built and developed to find the best one, such as linear regression. This ideal model will predict customer ratings, that way businesses can analyze their goals and customers more effectively. 
+A solution that is ideal for this type of problem is building a predictive model using data science. To be more specific, there will be multiple models built and developed to find the best one, such as linear regression. This ideal model will predict customer ratings, so businesses can analyze their goals and customers more effectively. 
 
 **Impact**
 This solution will add value to businesses by having product improvement, inventory optimization, higher customer loyalty, and reduced return rates. Beauty companies will gain insight from the predictive feedback to tailor their formulas, packaging, or marketing strategy. Beauty retailers, such as Sephora, can predict which products will be rated high to stock more inventory or reduce their overstock on low-demand products. Customers will have fewer returns to make because the products will meet their expectations, if not, surpass them. 
@@ -27,8 +27,8 @@ This solution will add value to businesses by having product improvement, invent
 
 ## Dataset Description
 - Source: Kaggle https://www.kaggle.com/datasets/raghadalharbi/all-products-available-on-sephora-website/data
-- Raw Files: Located under 
-- Processed files:
+- Raw Files: notebook/sephorawebsite.ipynb#1-importing-libraries-and-dataset
+- Processed files: notebook/sephorawebsite.ipynb#4-exploratory-data-analysis
 
 
 | File Name                | Description                                                   | 
@@ -67,8 +67,7 @@ Evaluation → Deployment & Reporting
 3. **Feature Engineering** – create new variables, encode categoricals, scale numerics.
 4. **Exploratory Data Analysis** – generate summary statistics and key visualizations.
 5. **Baseline Modeling** – simple models to set performance benchmarks.
-6. **Advanced Modeling & Optimization** – hyperparameter tuning, ensembles, or complex
-architectures.
+6. **Advanced Modeling & Optimization** – hyperparameter tuning, ensembles, or complex architectures.
 7. **Model Evaluation & Interpretation** – compare metrics.
 8. **Deployment & Reporting** –  final model 
 
